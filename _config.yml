@@ -1,61 +1,71 @@
-# Site Settings
-title: "A Family's Guide to Homeschooling and Life in Australia"
-author:
-  name: Cornelius
-  email: seinlim@gmail.com
-  bio: "Cornelius is a lifelong learner, avid traveler, and dedicated parent on a mission to empower families through education and exploration. His blog chronicles his family's homeschooling journey in Australia, sharing insights, experiences, and resources on topics ranging from coding and cooking to mindful living and cultural immersion."
-description: "A personal blog documenting our family's journey through the world of code, parenting, faith, books, baking, homeschooling, and the joys of raising young boys in Australia."
-baseurl: "/" # the subpath of your site, e.g. /blog
-url: "https://coryian.github.io" # the base hostname & protocol for your site, e.g. http://example.com
-
-# Social Media (Optional)
-# Add your social media usernames if you want them displayed on your site
-twitter_username: 
-instagram_username: 
-github_username: Coryian
-
-# Build Settings
-theme: minima
-plugins:
-  - jekyll-feed
-
-# Exclude from processing
-exclude:
-  - Gemfile
-  - Gemfile.lock
-  - node_modules
-  - vendor/bundle/
-  - vendor/cache/
-  - vendor/gems/
-  - vendor/ruby/
-
-# Markdown Processor Settings (Optional)
-# Configure your preferred markdown processor and extensions
-markdown: kramdown
-kramdown:
-  input: GFM
-  hard_wrap: false
-
-# Collections (Optional)
-# Define custom collections for organizing your content
+# Where things are
+source              : .
+destination         : ./_site
+collections_dir     : .
+plugins_dir         : _plugins # takes an array of strings and loads plugins in that order
+layouts_dir         : _layouts
+data_dir            : _data
+includes_dir        : _includes
+sass:
+  sass_dir: _sass
 collections:
-  recipes:
-    output: true
-  travel:
-    output: true
+  posts:
+    output          : true
 
-# Defaults for Posts (Optional)
-# Set default values for frontmatter in your posts
-defaults:
-  - scope:
-      path: ""
-      type: posts
-    values:
-      layout: post
-      author_profile: true
-      share: true
+# Handling Reading
+safe                : false
+include             : [".htaccess"]
+exclude             : ["Gemfile", "Gemfile.lock", "node_modules", "vendor/bundle/", "vendor/cache/", "vendor/gems/", "vendor/ruby/"]
+keep_files          : [".git", ".svn"]
+encoding            : "utf-8"
+markdown_ext        : "markdown,mkdown,mkdn,mkd,md"
+strict_front_matter : false
 
-# Pagination (Optional)
-# Configure pagination for your blog posts
-paginate: 5
-paginate_path: "/page:num/"
+# Filtering Content
+show_drafts         : null
+limit_posts         : 0
+future              : false
+unpublished         : false
+
+# Plugins
+whitelist           : []
+plugins             : []
+
+# Conversion
+markdown            : kramdown
+highlighter         : rouge
+lsi                 : false
+excerpt_separator   : "\n\n"
+incremental         : false
+
+# Serving
+detach              : false
+port                : 4000
+host                : 127.0.0.1
+baseurl             : "" # does not include hostname
+show_dir_listing    : false
+
+# Outputting
+permalink           : date
+paginate_path       : /page:num
+timezone            : null
+
+quiet               : false
+verbose             : false
+defaults            : []
+
+liquid:
+  error_mode        : warn
+  strict_filters    : false
+  strict_variables  : false
+
+# Markdown Processors
+kramdown:
+  auto_ids          : true
+  entity_output     : as_char
+  toc_levels        : [1, 2, 3, 4, 5, 6]
+  smart_quotes      : lsquo,rsquo,ldquo,rdquo
+  input             : GFM
+  hard_wrap         : false
+  footnote_nr       : 1
+  show_warnings     : false
