@@ -1,17 +1,61 @@
-title: "Homeschooling Success: A Korean-Australian Perspective"
-author:                           # 작성자 정보
-  name: "Cornelius"                 # 작성자 이름
-  email: "seinlim@gmail.com"        # 작성자 이메일
-  bio: "Cornelius is a lifelong learner, avid traveler, and dedicated parent on a mission to empower families through education and exploration. His blog chronicles their homeschooling journey in Australia, sharing insights, experiences, and resources on topics ranging from coding and cooking to mindful living and cultural immersion."
+# Site Settings
+title: "A Family's Guide to Homeschooling and Life in Australia"
+author:
+  name: Cornelius
+  email: seinlim@gmail.com
+  bio: "Cornelius is a lifelong learner, avid traveler, and dedicated parent on a mission to empower families through education and exploration. His blog chronicles his family's homeschooling journey in Australia, sharing insights, experiences, and resources on topics ranging from coding and cooking to mindful living and cultural immersion."
+description: "A personal blog documenting our family's journey through the world of code, parenting, faith, books, baking, homeschooling, and the joys of raising young boys in Australia."
+baseurl: "/" # the subpath of your site, e.g. /blog
+url: "https://coryian.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 
-description: >-                   # 블로그 설명 (여러 줄 가능)
-  "A personal blog documenting my journey through the world of code, parenting, faith, books, baking, homeschooling, and the joys of raising young boy."
+# Social Media (Optional)
+# Add your social media usernames if you want them displayed on your site
+twitter_username: 
+instagram_username: 
+github_username: Coryian
 
-baseurl: "/"                     # 깃허브 페이지 저장소 이름과 일치 (보통 "/")
-url: "https://fromatoz.github.io"  # 실제 깃허브 페이지 URL
+# Build Settings
+theme: minima
+plugins:
+  - jekyll-feed
 
-# 깃허브 정보
-github_username: Coryian       # 깃허브 사용자 이름
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
 
-# 테마 설정
-theme: minima                   # 사용할 Jekyll 테마 (Minima)
+# Markdown Processor Settings (Optional)
+# Configure your preferred markdown processor and extensions
+markdown: kramdown
+kramdown:
+  input: GFM
+  hard_wrap: false
+
+# Collections (Optional)
+# Define custom collections for organizing your content
+collections:
+  recipes:
+    output: true
+  travel:
+    output: true
+
+# Defaults for Posts (Optional)
+# Set default values for frontmatter in your posts
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+      author_profile: true
+      share: true
+
+# Pagination (Optional)
+# Configure pagination for your blog posts
+paginate: 5
+paginate_path: "/page:num/"
