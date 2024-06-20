@@ -1,7 +1,9 @@
 title: Homeschooling Success: A Korean-Australian Perspective
-author: Cornelius is a lifelong learner, avid traveler, and dedicated parent on a mission to empower families through education and exploration. His blog chronicles their homeschooling journey in Australia, sharing insights, experiences, and resources on topics ranging from coding and cooking to mindful living and cultural immersion.       # 작성자 정보
+author:                           # 작성자 정보
   name: Cornelius                 # 작성자 이름
   email: seinlim@gmail.com        # 작성자 이메일
+  bio: Cornelius is a lifelong learner, avid traveler, and dedicated parent on a mission to empower families through education and exploration. His blog chronicles their homeschooling journey in Australia, sharing insights, experiences, and resources on topics ranging from coding and cooking to mindful living and cultural immersion.
+
 description: >-                   # 블로그 설명 (여러 줄 가능)
   A personal blog documenting my journey through the world of code, parenting, 
   faith, books, baking, homeschooling, and the joys of raising young boy.
