@@ -1,14 +1,17 @@
-title: From A to Z
-author: Coryian
-  name: Sein
-  email: seinlim@gmail.com
-description: A personal blog documenting my journey through the world of code, parenting, faith, books, baking, organization, and the joys of raising young boy.
-  
-baseurl: "coryian.github.io"
-url: fromatoz.github.io
-github_username:  Coryian
+title: From A to Z                 # 블로그 제목
+author:                           # 작성자 정보
+  name: Sein                       # 작성자 이름
+  email: seinlim@gmail.com        # 작성자 이메일
+description: >-                   # 블로그 설명 (여러 줄 가능)
+  A personal blog documenting my journey through the world of code, parenting, 
+  faith, books, baking, organization, and the joys of raising young boy.
 
-minima:
-  skin: dark  # having no effect
+# URL 설정
+baseurl: "/"                     # 깃허브 페이지 저장소 이름과 일치 (보통 "/")
+url: "https://fromatoz.github.io"  # 실제 깃허브 페이지 URL
 
-theme: minima
+# 깃허브 정보
+github_username: formatozz       # 깃허브 사용자 이름
+
+# 테마 설정
+theme: minima                    # 사용할 Jekyll 테마 (Minima)
