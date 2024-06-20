@@ -1,1 +1,14 @@
+title: From A to Z
+author: Coryian
+  name: Sein
+  email: seinlim@gmail.com
+description: A personal blog documenting my journey through the world of code, parenting, faith, books, baking, organization, and the joys of raising young boy.
+  
+baseurl: "coryian.github.io"
+url: fromatoz.github.io
+github_username:  Coryian
 
+minima:
+  skin: dark  # having no effect
+
+theme: minima
