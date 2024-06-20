@@ -8,7 +8,7 @@ description: >-                   # 블로그 설명 (여러 줄 가능)
 
 # URL 설정
 baseurl: "/"                     # 깃허브 페이지 저장소 이름과 일치 (보통 "/")
-url: "https://formatozz.github.io"  # 실제 깃허브 페이지 URL
+url: "https://fromatoz.github.io"  # 실제 깃허브 페이지 URL
 
 # 깃허브 정보
 github_username: formatozz       # 깃허브 사용자 이름
